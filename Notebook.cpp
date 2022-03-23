@@ -7,23 +7,24 @@
 #include "Notebook.hpp"
 #define ROW_MAX_LENGTH 100
 
-using ariel::Direction;
+
+using namespace ariel;
 
 namespace ariel{
     Notebook::Notebook() {}
 
-    void write(int page,int row,int column,Direction d,std::string str){
+    void Notebook::write(int page,int row,int column,Direction d,std::string str){
 
 
     }
-    std::string read(int page,int row,int column,Direction d,int length){
+    std::string Notebook::read(int page,int row,int column,Direction d,int length){
 
         return "hello";
     }
-    void erase(int page,int row,int column,Direction d,int length){
+    void Notebook::erase(int page,int row,int column,Direction d,int length){
 
     }
-    std::string show(int page){
+   std::string Notebook:: show(int page){
         return "world";
     }
 
